@@ -13,20 +13,33 @@ Contar con server como LAMP, WAMP o contar con un simulador como XAMMP
 
 ### Ejecutar Proyecto
 
-**Paso 1**
-Creamos la base de datos con el nombre myTasks
+#### Paso 1
+Creamos la base de datos con el nombre mytasks
 ```
-mysql> create database myTasks;
+mysql> create database mytasks;
 ```
 
-Importamos la estructura y los registro con el siguiente codigo
+Importamos la estructura y los registros. Existen varios medios de realizar la importacion de la base de datos:
+
+**Consola**
 ```
-mysql -u root -p 'myTasks' < filename.sql
+mysql -u root -p 'mytasks' < filename.sql
 ```
+
+**Shell**
+```
+\source <ruta\data.sql>
+```
+
+**Terminal**
+```
+\. <ruta\data.sql>
+```
+
 
 Luego de estos dos pasos ya tendremos la estructura y los datos de la base de datos.
 
-**Paso 2**
+#### Paso 2
 En el caso de usar LAMP Server clonar la aplicacion en la siguiente ubicacion:
 ```
 cd /var/www/html/
@@ -42,4 +55,4 @@ git clone https://github.com/MoraBoop/php-crud-task.git
 
 Por ultimo dirigirnos al host local y usar la ruta de acceso: localhost:php-crud-task/
 
-![CRUD](cap.png)
+![CRUD](cap.png "1100*600")
