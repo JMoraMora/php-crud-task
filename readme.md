@@ -54,5 +54,3 @@ git clone https://github.com/MoraBoop/php-crud-task.git
 ```
 
 Por ultimo dirigirnos al host local y usar la ruta de acceso: localhost:php-crud-task/
-
-![CRUD](cap.png "1100*600")
